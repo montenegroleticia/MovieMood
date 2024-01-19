@@ -1,8 +1,8 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import ReactDOM from 'react-dom';
 import App from './App.jsx';
-import ResetStyle from './Styles/ResetStyle.js';
-import GlobalStyle from './Styles/GlobalStyle.js';
+import ResetStyle from './Styles/ResetStyle.jsx';
+import GlobalStyle from './Styles/GlobalStyle.jsx';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
