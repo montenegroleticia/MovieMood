@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import SignContainer from "./Styles/index"
 
 export default function SignUp(){
@@ -50,7 +51,7 @@ export default function SignUp(){
                         required />
                 <button type="submit">Cadastrar</button>
                 </form>
-                <a href="#">Já tem uma conta? Entre agora!</a>
+                <Link to={`/`}>Já tem uma conta? Entre agora!</Link>
             </SignContainer>
     );
 }
