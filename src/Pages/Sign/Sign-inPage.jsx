@@ -1,5 +1,6 @@
 import { useState } from "react";
 import SignContainer from "./Styles/index"
+import { Link } from "react-router-dom";
 
 export default function SignIn() {
      const [form, setForm] = useState({
@@ -32,7 +33,7 @@ export default function SignIn() {
                     required />
                 <button type="submit">Entrar</button>
             </form>
-            <a href="#">Primeira vez? Cadastre-se!</a>
+            <Link to={`/sign-up`}>Primeira vez? Cadastre-se!</Link>
         </SignContainer>
 
     );
